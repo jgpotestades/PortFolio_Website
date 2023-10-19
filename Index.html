@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daily Tuition</title>
 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Volcanic Eruption</title>
+ 
 
     <!--  Bootstrap css file  -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -40,7 +44,7 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#home"><img src="./img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,27 +53,13 @@
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">about</a>
+                            <a class="nav-link" href="#info">Information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                        </li>
-
+                            <a class="nav-link" href="#about-us">About Us</a>
                     </ul>
                 </div>
             </nav>
@@ -83,30 +73,46 @@
 
 
         <!--  ======================= Start Banner Area =======================  -->
-        <section class="site-banner">
+        <section id="home" class="site-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title">
-                        <h3 class="title-text">Hey</h3>
-                        <h1 class="title-text text-uppercase">I am Akshay</h1>
-                        <h4 class="title-text text-uppercase">Senior Wordpress Developer</h4>
-                        <div class="site-buttons">
-                            <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
-                                    me</button>
-                                <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
-                            </div>
-                        </div>
+                        <h3 class="title-text">A quick study about</h3>
+                        <h1 class="title-text text-uppercase">Volcanic Eruption</h1>
+                        <h4 class="title-text text-uppercase">Know the risks, take the steps.</h4>
                     </div>
                     <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <img src="./img/banner/banner-image.jpg" alt="banner-img" class="img-fluid">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                              <img src="./img/rrl1-image.jpg" alt="banner-img" class="img-fluid">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <img src="./img/rrl2-image.jpg" alt="banner-img" class="img-fluid">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                              <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--  ======================= End Banner Area =======================  -->
 
-        <!--  ========================= About Area ==========================  -->
+        <!--  ========================= Introduction Area  ==========================  -->
 
         <section class="about-area">
             <div class="container-fluid">
@@ -117,122 +123,91 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
+
                         <h2 class="text-uppercase pt-5">
-                            <span>Let me</span>
-                            <span>introduce</span>
-                            <span>myself</span>
+                            <span>Introduction</span>
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
-                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                                Volcanic eruptions, as geological hazards, have the potential to cause significant damage and loss of life. Effective communication of complex volcanic information is vital for managing these natural events.
                             </p>
                             <p class="para">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                here
+                                This study aims to provide comprehensive insights into visually conveying such information through an infographic, emphasizing the critical importance of preparedness, response, and recovery phases. Volcanic eruptions, being natural phenomena, have profound effects on society and the environment.
                             </p>
                         </div>
-                        <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--  ========================= End About Area ==========================  -->
+        <!--  ========================= End Introduction Area ==========================  -->
 
-        <!--  ======================== Brand Area ==============================  -->
+        <!--  ========================= Acknowledgement Area ==========================  -->
 
-        <section class="brand-area">
+        <section class="about-area">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="first-row row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo1.png" alt="Brand-1 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo2.png" alt="Brand-2 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo3.png" alt="Brand-3 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo4.png" alt="Brand-4">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo5.png" alt="Brand-5 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo6.png" alt="Brand-6">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo7.png" alt="Brand-7 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo8.png" alt="Brand-8 ">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo9.png" alt="Brand-9">
-                                </div>
-                            </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+
+                        <h2 class="text-uppercase pt-5">
+                            <span>Acknowledgement</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                The following people have the researchers' sincere gratitude for everything they've done to make this research a success as well as those who have assisted them along the way. They want to start by giving thanks to God for being at their side the entire time. This fulfilment would not be possible without the knowledge and wisdom that was bestowed to them.
+                            </p>
+                            <p class="para">
+                                The researcher also like to acknowledge Mr. Jake Azarcon from Barangay Loma De Gato for giving time and information for research. This research will not be possible without the information that you have given to us.
+                            </p>
+                            <p class="para">
+                                The researchers praised themselves for giving this research their best effort. They also want to express their gratitude to their teachers, Ms. Jamica Abuda and Ms. Carmela Magpile, who assisted the researchers from the beginning of the study till the very finish. Their guidance and assistance inspired them to come up with excellent output.  
+                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="experience-area">
-                            <div class="d-flex flex-row years-area">
-                                <h2 class="p-3 years">10</h2>
-                                <h2>
-                                    <span>Years</span>
-                                    <span>Experience</span>
-                                    <span>Working</span>
-                                </h2>
-                            </div>
-                            <div class="d-flex flex-row flex-wrap call-area">
-                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                                <div class="call-now">
-                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                                    <span class="font-roboto py-2">(+91)-800-555-4986</span>
-                                </div>
-                            </div>
-                            <div class="bg-panel"></div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="acknowledgement-image">
+                            <img src="./img/acknowledgement.jpg" alt="About us" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--  ======================== End Brand Area ==============================  -->
+        <!--  ========================= End Acknowledgement Area ==========================  -->
 
-        <!--  ====================== Start Services Area =============================  -->
+
+        <!--  ====================== Start Abstract Area =============================  -->
 
         <section class="services-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">Services Offers</h1>
+                        <h1 class="text-uppercase title-text">Abstract</h1>
                         <p class="para">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour
+                            This study's main goals are to recommend a plan of action and provide more details concerning volcanic eruption. The researchers were able to offer a strategy for becoming ready for volcanic eruptions. This research’s main focus is finding strategies to prevent people from becoming helpless once this danger strikes.
                         </p>
+                        <p class="para">
+                             According to this study, the community might be kept safe by knowing what to do before, during, and after the volcanic eruption. The researchers suggested that those who might become victims of a volcanic explosion might greatly benefit from paying attention to authorities and gathering necessary supplies. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End Abstract Area =============================  -->
+
+        <!--  ====================== Start Information (Action Plan) Area =============================  -->
+
+        <section id="info" class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h2 class="text-uppercase title-text">Information</h2>
+                        <h1 class="text-uppercase title-text">Action Plan</h1>
+
+                        <span class="para">
+                            This Chapter Consists of 4 parts
+                        </span>
                     </div>
                 </div>
                 <div class="container services-list">
@@ -243,11 +218,9 @@
                                     <img src="./img/services/s1.png" alt="Services-1">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Wp developer</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Procedures Outline</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        The Procedures that will be used will be implemented with the help of this research is First: to conduct the research of what a Volcanic Eruption is about which ranges from how it occurs, theories, how it can affect communities, and lastly how to safeguard yourself and the people around you from it. Second: is to place all research into a research paper that consists of why it is being researched, and how the research can be implemented. Lastly: is to finally implement said research to communities that is inside the scope of what is researched.
                                     </p>
                                 </div>
                             </div>
@@ -258,11 +231,9 @@
                                     <img src="./img/services/s2.png" alt="Services-2">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Proposed Solution</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        The desired results in this research is to spread awareness about Volcanic Eruptions, the dangers it can bring to a community, and how to effectively safeguard citizens in this community.
                                     </p>
                                 </div>
                             </div>
@@ -273,11 +244,9 @@
                                     <img src="./img/services/s3.png" alt="Services-3">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">Basis of the proposal</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        The proposition for this research is to study Volcanic Eruptions and how to keep people safe from it. The research is important for those who have little to no knowledge of the implications what volcanic eruptions can do and what dangers it can bring to a community, it will be conducted by looking for different sources in the internet on how to effectively safeguard a community when a volcanic eruption occurs, second is to interview local government officials in the target community such as Barangay Captains.
                                     </p>
                                 </div>
                             </div>
@@ -288,11 +257,9 @@
                                     <img src="./img/services/s4.png" alt="Services-4">
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
+                                    <h5 class="card-title text-uppercase font-roboto">target implementation</h5>
                                     <p class="card-text text-secondary">
-                                        Some quick example text to build on the card
-                                        title and make up
-                                        the bulk of the card's content.
+                                        The target is to prepare oneself to either seek refuge or to flee. Create an escape and shelter plan for your family and other members of your household. Verify that everyone is aware of the plans by going over them again. Get an emergency supplies kit together if you haven't already
                                     </p>
                                 </div>
                             </div>
@@ -302,266 +269,442 @@
             </div>
         </section>
 
-        <!--  ====================== End Services Area =============================  -->
+        <!--  ====================== End Information (Action Plan) Area =============================  -->
+    
+            <!--  ====================== Start Information (Discussion of the topic) Area =============================  -->
+            <section class="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center services-title">
+                            <h1 class="text-uppercase title-text">Discussion of the topic</h1>
 
-        <!--  ======================= Project Area =============================  -->
+                            <div class="vid-container">
+                                <video src="./videos/video1.mp4" class="slider" autoplay loop controls></video>
+                        
+                                <ul>
+                                    <li onclick="videoslider('./videos/video1.mp4')"><video src="./videos/video1.mp4"></video></li>
 
-        <section class="project-area">
-            <div class="container">
-                <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1">Recently Done Project</h1>
-                    <h1 class="text-uppercase title-h1">Quality Work</h1>
-                </div>
+                                    <li onclick="videoslider('./videos/video2.mp4')"><video src="./videos/video2.mp4"></video></li>
 
-                <div class="button-group">
-                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
-                    <button type="button" data-filter=".popular">Popular</button>
-                    <button type="button" data-filter=".latest">Latest</button>
-                    <button type="button" data-filter=".following">Following</button>
-                    <button type="button" data-filter=".upcoming">Upcoming</button>
-                </div>
+                                    <li onclick="videoslider('./videos/video3.mp4')"><video src="./videos/video3.mp4"></video></li>
 
-                <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p1.jpg">
-                                    <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
-                                </a>
+                                    <li onclick="videoslider('./videos/video4.mp4')"><video src="./videos/video4.mp4"></video></li>
+                                </ul>
                             </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Minimul Desing</h4>
-                                <span class="text-secondary">Latest, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p2.jpg">
-                                    <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Paint Wall</h4>
-                                <span class="text-secondary">Popular, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p3.jpg">
-                                    <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Female light</h4>
-                                <span class="text-secondary">Popular, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p4.jpg">
-                                    <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Fourth Air</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p5.jpg">
-                                    <img src="./img/portfolio/p5.jpg" alt="portfolio-5" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Muliple fown</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p6.jpg">
-                                    <img src="./img/portfolio/p6.jpg" alt="portfolio-6" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Together sign</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p7.jpg">
-                                    <img src="./img/portfolio/p7.jpg" alt="portfolio-7" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Green Heaven</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p8.jpg">
-                                    <img src="./img/portfolio/p8.jpg" alt="portfolio-8" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Fly Male</h4>
-                                <span class="text-secondary">Following, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="./img/portfolio/p9.jpg">
-                                    <img src="./img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Camera Lens</h4>
-                                <span class="text-secondary">Upcoming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!--  ======================= End Project Area =============================  -->
-
-        <!--  ======================== About Me Area ==============================  -->
-
-        <section class="about-area">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="about-title">
-                            <h1 class="text-uppercase title-h1">Client Say about me</h1>
+                            <p class="para" style="padding-top: 9rem;">
+                                Volcanic eruptions are initiated by the movement of heat beneath the Earth's surface. These eruptions typically commence with the accumulation of gas-rich molten rock (magma) in reservoirs near the surface and may be preceded by the release of steam and gas from small ground vents. Moreover, minor earthquakes, often resulting from the interaction between dense, slow-moving magma and more permeable magma, can act as precursors to volcanic eruptions, especially those of an explosive nature. 
+                            </p>
                             <p class="para">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
-                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                                Furthermore, volcanic eruptions can give rise to secondary events such as floods, landslides, and mudslides when coupled with precipitation. Additionally, they can incite wildfires through the emission of hot ashes. Beyond these immediate effects, volcanic eruptions also play a role in climate change by emitting gases such as sulfur dioxide, capable of inducing global cooling, and volcanic carbon dioxide, with the potential to contribute to global warming.  
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+    
+            <!--  ====================== End Information (Discussion of the topic) Area =============================  -->
 
-            <div class="container carousel py-lg-5">
-                <div class="owl-carousel owl-theme">
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John Martin</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Mac Hill</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John Martin</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Mac Hill</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John Martin</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="./img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Mac Hill</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div>
+            
+<!--  ========================= Start RRL Area ==========================  -->
+<section class="about-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 about-title">
+
+                <h2 class="text-uppercase pt-5">
+                    <span>Review of Related Literature</span>
+                </h2>
+                <div class="paragraph py-4 w-75">
+                    <h1 class="text-uppercase pt-5">Foreign</h1>
+                    <h1 class="pt-5">The Omega Theory</h1>
+                    <p class="para">
+                        The following people have the researchers' sincere gratitude for everything they've done to make this research a success as well as those who have assisted them along the way. They want to start by giving thanks to God for being at their side the entire time. This fulfilment would not be possible without the knowledge and wisdom that was bestowed to them.
+                    </p>
+                    <p class="para">
+                        The researcher also like to acknowledge Mr. Jake Azarcon from Barangay Loma De Gato for giving time and information for research. This research will not be possible without the information that you have given to us.
+                    </p>
+                    <p class="para">
+                        The researchers praised themselves for giving this research their best effort. They also want to express their gratitude to their teachers, Ms. Jamica Abuda and Ms. Carmela Magpile, who assisted the researchers from the beginning of the study till the very finish. Their guidance and assistance inspired them to come up with excellent output.  
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="rrl1-image">
+                    <img src="./img/rrl1-image.jpg" alt="rrl1-image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="rrl2-image">
+                    <img src="./img/rrl2-image.jpg" alt="" class="img-fluid">
                 </div>
             </div>
 
-        </section>
-
-        <!--  ======================== End About Me Area ==============================  -->
-
-        <!--  ========================== Subscribe me Area ============================  -->
-        <section class="subscribe-us-area">
-            <div class="container subscribe">
-                <div class="row">
-                    <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                            consequuntur.</p>
-                    </div>
+            <div class="col-lg-6 col-md-12 about-title">
+                <div class="paragraph py-4 w-75">
+                    <h1 class="pt-5">Ofteness of Volcanic Eruptions</h1>
+                    <p class="para">
+                        There are typically 40-50 continuing eruptions, and out of those generally around 20 will be actively erupting on any particular day. Overall, 50 volcanoes were in continuing eruption status as of 17 August 2023. An eruption marked as "continuing" does not always mean persistent daily activity but indicates at least intermittent eruptive events without a break of 3 months or more. As of August 2, 2023, the latest eruption listed in the list of the Global Volcanism Program is Poas, Costa Rica.
+                    </p>
                 </div>
-                <div class="d-sm-flex justify-content-center">
-                    <form class="w-50">
-                        <div class="row d-flex flex-row flex-wrap">
-                            <div class="col input-textbox">
-                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 about-title">
+                <div class="paragraph py-4 w-75">
+                    <h1 class="text-uppercase pt-5">Local</h1>
+                    <h1 class="pt-5">Taal’s Beauty in Chaos</h1>
+                    <p class="para">
+                        Batangas has a very active volcano, The Taal volcano. The Taal has its own uniqueness and beauty, It is a recommended place for tourists that visit Philippines. The best view where you’ll see the beauty of the Taal is in the Tagatay ridge. With more than 30 recorded eruptions, Taal Volcano is one of the Philippines' most active volcanoes. When Taal Volcano last erupted in early January 2020, more than 736,000 people were affected in CALABARZON (Region IV-A), Central Luzon (Region III), and the National Capital Region (NCR), and more than 500,000 people had to be evacuated.
+                    </p>
+                    <p class="para">
+                        Recently, The active volcano in Batangas erupted. The volcanic hazard around Batangas is high. Usually, the cause that volcanoes occurred is the pressurization by the subduction of the oceanic plate and terrestrial plate.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="rrl3-image">
+                    <img src="./img/rrl3-image.jpg" alt="rrl3-image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="rrl4-image">
+                    <img src="./img/rrl4-image.jpg" alt="rrl4-image" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 about-title">
+                <div class="paragraph py-4 w-75">
+                    <h1 class="pt-5">Pinatubong Tragedy</h1>
+                    <p class="para">
+                        People knew Mount Pinatubo, It is known for one of the deadliest eruptions that happened in the Western Luzon, Philippines. The Mount Pinatubo ejected the ashes that El Chichón volcano (1982), which caused the Mount Pinatubo as the largest eruption in the 20th century, killing more than 72 people. In the part of Luzon, they lead the agricultural community that happens in the Philippines, they probide the need like rice, sugar, corn, etc.
+                    </p>
+                    <p class="para">
+                        When the Mount Pinatubo exploded, and this cause the disruption of the agriculture and caused a hundreds of people lose a job.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  ========================= End RRL Area ==========================  -->
+
+<!--  ====================== Start Results and Action Plan Area =============================  -->
+
+<section class="services-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center services-title">
+                <h1 class="text-uppercase title-text" style="padding-bottom: 3rem;">Results and Action Plan</h1>
+
+                <p class="para">
+                    One must be aware of what to do prior to, during, and after a volcanic eruption in order to ensure their own survival. Researchers advise people to gather the required resources, such as food and clothing for the upcoming days, and to make sure to retain all of their vital papers before the volcanic explosion. Additionally, work on communicating with everyone in the neighbourhood. Keep yourself safe and pay attention to the volcanic eruption alerts while the activity is taking place. If the authorities urge you to leave even though it appears safe to you to stay, heed their advice because they are aware of the potential damage a volcanic eruption might do.
+                </p>
+
+                <p class="para">
+                    Wearing protective clothing is another way to shield yourself from the falling ash, which can irritate or harm your skin. Additionally, carry a mask which protects your respiratory system because it will be risky for your breathing. After the volcanic eruption, pay attention to the authorities when they say whether it is safe to exit the evacuation center. Protect yourself from falling ash by wearing your mask at all times. 
+                </p>
+
+                <p class="para" style="padding-bottom: 3rem;">
+                    When the authorities declare it is safe to return home following volcanic activity, check your neighbourhood to see if there has been any damage, then ask for advice on whether it is safe to stay there. For up-to-date updates on the volcano, keep listening to the news. Ashfalls are heavy on roofs and may be the reason for a roof's collapse, therefore if it is safe to go outdoors, be careful to clean your roof while it still has ash on it. 
+                </p>
+
+                <!-- Photo gallery -->
+                <div class="gallery">
+                    <a target="_blank" href="./img/peta2.jpg">
+                      <img src="./img/peta2.jpg" alt="Peta 2" width="50%" height="650">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="./img/peta1.jpg">
+                      <img src="./img/peta1.jpg" alt="Peta 1" width="50%" height="650">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="./img/rrl1-image.jpg">
+                      <img src="./img/rrl1-image.jpg" alt="rrl1-image" width="50%" height="400">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="./img/rrl2-image.jpg">
+                      <img src="./img/rrl2-image.jpg" alt="rrl2-image" width="50%" height="400">
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="./img/rrl3-image.jpg">
+                      <img src="./img/rrl3-image.jpg" alt="rrl3-image" width="50%" height="400">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ====================== End Results and Action Plan Area =============================  -->
+
+
+<!--  ====================== Start Appendices Area =============================  -->
+<section class="services-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center services-title">
+                <h1 class="text-uppercase title-text">Appedinces</h1>
+                <span class="text-uppercase pt-5">PROVINCIAL DISASTER RISK REDUCTION AND MANAGEMENT OFFICE (PROVINCE OF BULACAN) </span>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Based on the Republic of the Philippines: Province of Bulacan, Provincial Disaster Risk Reduction and Management Office, its focus is to help the Local Government and its community to comprehend the hazards they face, specifically during volcanic eruption, to lessen the risks and for them to be prepared -- it is to make sure of the readiness and resilience of the communities.
+                </p>
+
+                <table>
+                    <thead>
+                      <tr>
+                        <th>FUNCTIONS, DUTIES, AND RESPONSIBILITIES</th>
+                        <th>Content</th>
+                      </tr>
+                    </thead>
+
+
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Design, program, and coordinate disaster risk reduction and management activities consistent the national Council's standards and guidelines;</td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td>Facilitate and support provincial risk assessments and emergency preparation.</td>
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td>Consolidate local disaster risk information which includes natural hazards, vulnerabilities, and climate change risks, and maintain a local risk map.</td>
+                      </tr>
+
+                      <tr>
+                        <td>4</td>
+                        <td>Organize and conduct training, orientation, and knowledge management activities on disaster risk reduction and management at the provincial level.</td>
+                      </tr>
+
+                      <tr>
+                        <td>5</td>
+                        <td>Operate a multi-hazard early warning system, linked to disaster risk reduction to provide accurate and timely advice to national or local emergency response organizations and to the general public, through diverse mass media, particularly radio, landline communications, and technologies for communication within rural communities.</td>
+                      </tr>
+
+                      <tr>
+                        <td>6</td>
+                        <td>Formulate and implement a comprehensive and integrated Provincial Disaster Risk Reduction in close coordination with the Provincial Development Council (PDC).</td>
+                      </tr>
+
+                      <tr>
+                        <td>7</td>
+                        <td>Identify, assess and manage the hazards vulnerabilities and risks that may occur in the Province of Bulacan.</td>
+                      </tr>
+
+                      <tr>
+                        <td>8</td>
+                        <td>Disseminate information and raise public awareness about those hazards, vulnerabilities and risks that may occur in the province.</td>
+                      </tr>
+
+                      <tr>
+                        <td>9</td>
+                        <td>Identify and implement cost-effective risk reduction measures/strategies.</td>
+                      </tr>
+
+                      <tr>
+                        <td>10</td>
+                        <td>Develop, strengthen and operationalize mechanism for partnership or networking with the private sector, CSO's and volunteer groups.</td>
+                      </tr>
+
+                      <tr>
+                        <td>11</td>
+                        <td>Respond to and manage the adverse effects of emergencies and carry out recovery activities in the affected area, ensuring that there is an efficient mechanism for immediate delivery of food, shelter and medical supplies for women and children, endeavour; and</td>
+                      </tr>
+
+                      <tr>
+                        <td>12</td>
+                        <td>Serve as the secretariat and executive arm of the PDRRMC.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h1 class="text-uppercase title-text" style="padding-top: 3rem;">Summary of Raw Data</h1>
+
+                  <p class="para">
+                    The researchers provided a survey for the barangay official of Loma de Gato, Marilao, Bulacan to answer some questions regarding on how volcanic eruption could affect their community and how would they handle it. Mr. Jake Azarcon, SK Kagawad of Brgy. Loma de Gato, answered the survey willingly. 
+                </p>
+
+                <div class="accordion">
+                    <div class="contentBox">
+                        <div class="label">What is the estimated population in your barangay?</div>
+                        <div class="content">
+                            <p>70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="contentBox">
+                        <div class="label">What are the common problems that your community are facing when encountering a hazard?</div>
+                        <div class="content">
+                            <p>Since Loma de Gato is one of the biggest barangays in terms of land area in Bulacan, sometimes is the distance of the rescue team HQ. Another is the traffic that causes delay of the response team.</p>
+                        </div>
+                    </div>
+
+                    <div class="contentBox">
+                        <div class="label">Are all member of the community aware of Brgy. Evacuation plan?</div>
+                        <div class="content">
+                            <p>Yes</p>
+                        </div>
+                    </div>
+
+                    <div class="contentBox">
+                        <div class="label">What are the Geologic or Hydrometeo- ological  
+                            Hazard that are present in your community?
                             </div>
-                            <div class="col">
-                                <div class="btn-submit">
-                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
-                                </div>
-                            </div>
+                        <div class="content">
+                            <p>Fire and Flood</p>
                         </div>
-                    </form>
+                    </div>
+
+                    <div class="contentBox">
+                        <div class="label">Which hazard is more often?</div>
+                        <div class="content">
+                            <p>Fire</p>
+                        </div>
+                    </div>
+
+                    <div class="contentBox">
+                        <div class="label">What are your plans if the effects of Volcanic Eruption occur in your barangay? Site examples.</div>
+                        <div class="content">
+                            <p>First and foremost is the evaluation of the damage that will also give idea of what are the things needed to provide aside from KN-95 masks and relief goods (food and clothing).</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!--  ========================== End Subscribe me Area ============================  -->
+        </div>
+    </div>
+</section>
+
+<!--  ====================== End Appendices Area =============================  -->
+
+<!--  ====================== Start Bibliography Area =============================  -->
+<section class="services-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center services-title">
+                <h1 class="text-uppercase title-text">Bibliography</h1>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Decker, R. W., Raikar, S. P., & Decker, B. B. (2023, October 12). Volcanic eruption | Description, history, mythology, & facts. Encyclopedia Britannica. https://www.britannica.com/science/volcanic-eruption
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Earth, D. O., & McNutt, S. R. (2017). Volcanic eruptions and their repose, unrest, precursors, and timing. In National Academies Press eBooks. https://doi.org/10.17226/24650
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Global Volcanism Program | Current eruptions. (n.d.). https://volcano.si.edu/gvp_currenteruptions.cfm
+
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Hughes, M. K., Huang, Y., Dessai, S., & Cronin, S. J. (n.d.). Volcanic eruption - An overview. ScienceDirect, Topics. https://www.sciencedirect.com/topics/earth-and-planetary-sciences/volcanic-eruption
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Nicolas, J. (2018, January 26). Volcanic eruptions and their impact on health. BusinessWorld Online. https://www.bworldonline.com/health/2018/01/26/115602/volcanic-eruptions-impact-health/
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Think Hazard - Bulacan - Volcano. (n.d.). https://thinkhazard.org/en/report/24221-philippines-region-iii-central-luzon-bulacan/VA
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Uncharted Philippines | Best of Batangas: Taal volcano, Taal heritage town and Anilao marine reserve. (n.d.). https://www.unchartedphilippines.com/en/adventures/best-of-batangas-taal-volcano-taal-heritage-town-and-anilao-marine-reserve/
+                </p>
+                
+                <p class="para" style="padding-top: 2rem;">
+                    Volcanic eruptions | IFRC. (n.d.). https://www.ifrc.org/our-work/disasters-climate-and-crises/what-disaster/volcanic-eruptions
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Volcanoes | Ready.gov. (n.d.-b). https://www.ready.gov/volcanoes
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    Woo, G. (2021). Geophysical hazards. In Elsevier eBooks (pp. 815–825). https://doi.org/10.1016/b978-0-08-102908-4.00069-2
+                </p>
+
+                <p class="para" style="padding-top: 2rem;">
+                    World Health Organization: WHO. (2019). Volcanic eruptions. www.who.int. https://www.who.int/health-topics/volcanic-eruptions#tab=tab_1
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  ====================== End Bibliography Area =============================  -->
+
+       <!--  ====================== Start About Us Area =============================  -->
+
+    <section id="about-us" class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center services-title">
+                    <h1  class="text-uppercase title-text">About Us</h1>
+                    
+                    <span>Robin Valencia</span> 
+                    <p class="para">
+                        Driven to discover new experiences and learn more about myself, I am an academic achiever and active member of my school community. With a proven track record of success in pre-school, elementary, and junior high school, I am also involved in several extracurricular organizations and serve as a class officer. I am passionate about pursuing a life full of experiences and opportunities, and I am eager to see what the future holds.
+                    </p>
+                    
+                    <span>Andre Ramos</span> 
+                    <p class="para">
+                        He is a 16-year-old member of the Tanglaw organization. He believes in the saying "motivation is to start where discipline is to finish." He lives with chivalry and righteousness as he faces everyday problems and hindrances.
+                    </p>
+
+                    <span>Andre Ramos</span> 
+                    <p class="para">
+                        He is a 16-year-old member of the Tanglaw organization. He believes in the saying "motivation is to start where discipline is to finish." He lives with chivalry and righteousness as he faces everyday problems and hindrances.
+                    </p>
+
+                    <span>Carlos Ethan S. Alviar</span> 
+                    <p class="para">
+                        He is a carefree and easy-going person who is inspired to spread awareness.
+                    </p>
+
+                    <span>Cashiel Floro</span> 
+                    <p class="para">
+                        She is a carefree and easy-going person who is inspired to spread awareness.
+                    </p>
+
+                    <span>Melody R. Abante</span> 
+                    <p class="para">
+                        She is an outgoing person who has been a consistent honor student from elementary to grade 10 and is a champion of a singing competition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ====================== End About Us Area =============================  -->
 
 
     </main>
     <!--  ======================= End Main Area ================================ -->
+
+<!--  ======================= Start Footer Area ================================ -->
+
 
     <footer class="footer-area">
         <div class="container">
@@ -569,28 +712,54 @@
                 <div class="site-logo text-center py-4">
                     <a href="#"><img src="./img/logo.png" alt="logo"></a>
                 </div>
+                
+                <!--
                 <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
+                    <h5 class="text-uppercase">This source code is for project purposes only.</h5>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
+
+                -->
                 <div class="copyrights text-center">
                     <p class="para">
-                        Copyright ©2019 All rights reserved | This template is made with by
-                        <a href="#"><span style="color: var(--primary-color);">Daily Tuition</span></a>
+                        No copyright intended ©2023 All rights reserved.
+                        <a href="#"><span style="color: var(--primary-color);">Created by Valencia; Documented by Abante, Floro, Alviar, Ramos, Mangotara</span></a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
+<!--  ======================= End Footer Area ================================ -->
 
-    <!--  Jquery js file  -->
+
+    <!--  Jquery js file : this is a template-->
     <script src="./js/jquery.3.4.1.js"></script>
 
-    <!--  Bootstrap js file  -->
+    <!-- jquery cdn link -->
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.videos video').click(function(){
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var src = $(this).attr('src');
+                $('.main-video video').attr('src',src);
+            });
+        });
+
+    </script>
+    -->
+
+    <!--  Bootstrap js file: this is a template -->
     <script src="./js/bootstrap.min.js"></script>
 
     <!--  isotope js library  -->
@@ -605,7 +774,13 @@
     <!--  custom js file  -->
     <script src="./js/main.js"></script>
 
-
+    <!-- video gallery function -->
+    <script type="text/javascript">
+        function videoslider(links){
+        document.querySelector(".slider").src = links;
+    }
+    </script>
+    
 </body>
 
 </html>

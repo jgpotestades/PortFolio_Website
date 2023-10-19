@@ -9,6 +9,98 @@
 /* import global styling */ 
 @import url(./partials/_global.css);
 
+/*scroll behavior*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
 /* start navigation */ 
 
@@ -45,14 +137,9 @@
 /* end navigation */ 
 
 /* Banner Area */ 
-
-.site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
-}
-
 .site-main .site-banner .site-title h3{
-    padding-top: 35%;
-    font-weight: 500;
+    padding-top: 25%;
+    font-weight: 400;
 }
 
 .site-main .site-banner .site-title h3::after{
@@ -77,9 +164,6 @@
     padding: 7rem 0;
     width: 90rem;
 }
-
-
-
 /* End Banner Area */ 
 
 /* Start About Area */ 
@@ -90,12 +174,32 @@
 
 .site-main .about-area .about-title h2 > span{
     display: block;
-    font: normal bold 49px/ 60px var(--roboto);
-    letter-spacing: 21px;
+    font: normal bold 40px/ 60px var(--roboto);
+    letter-spacing: 10px;
 }
 
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
+}
+
+.site-main .about-area .acknowledgement-image{
+    padding-top: 8rem;
+}
+
+.site-main .about-area .rrl1-image{
+    padding-top: 25rem;
+}
+
+.site-main .about-area .rrl2-image{
+    padding-top: 3rem;
+}
+
+.site-main .about-area .rrl3-image{
+    padding-top: 8rem;
+}
+
+.site-main .about-area .rrl4-image{
+    padding-top: 3rem;
 }
 
 /* End About Area */ 
@@ -205,123 +309,273 @@
 .site-main > .services-area .services:hover{
     box-shadow: var(--box-shadow);
 }
-
-
-
 /* End Services Area */ 
 
 
-/* Project Area */ 
-
-.site-main .project-area{
-    padding: 4rem 0;
-}
-
-.site-main .project-area .button-group button{
-    background: transparent;
-    border: none;
-    font: normal 500 16px/130px var(--roboto);
-    text-transform: uppercase;
-}
-
-.site-main .project-area .button-group button + button{
-    padding-left: 3rem;
-}
-
-.site-main .project-area .grid .our-project > .title h4{
-    font: normal 700 25px/12px var(--roboto);
-}
-
-.site-main .project-area .grid .our-project .img a:hover img{
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-}
-
-
-/* End Project Area */ 
-
-
-/* About Me */ 
-
-.site-main .about-area .about-title p{
-    padding: 1rem 7rem;
-}
-
-.site-main .about-area .client{
-    background: #ffffff10;
-    box-shadow: var(--box-shadow);
-    margin: 3rem 0rem;
-}
-
-.site-main .about-area .client .client-img{
-    padding: 2rem;
-}
-
-.site-main .about-area .client .about-client{
-    padding-top: 2rem;
-}
-
-.site-main .about-area .client .about-client h4{
-    font: normal 500 21px/ 20px var(--roboto);
-}
-
-.site-main .about-area .client .about-client p{
-    font-size: 14px;
-}
-
-.site-main .about-area .owl-carousel .owl-item{
+/* Start Video container (Discussion of study) */
+.vid-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
-    padding: 0 1.5rem;
+    align-items: center;
 }
 
-.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
-    background: var(--primary-color);
-    width: 12px;
-    height: 12px;
+.vid-container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
-
-/* End About Me */ 
-
-/* Subscribe me */ 
-
-.site-main .subscribe-us-area .subscribe{
-    background: url(../img/subscribe-bg.png) no-repeat;
-    padding: 10rem 0;
-    margin: 3rem auto;
+.vid-container ul{
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/ 30px var(--roboto);
-    color: whitesmoke;
+.vid-container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title p{
-    color: whitesmoke;
-    padding: 1rem 4rem;
+
+.vid-container ul li video{
+    width: 200px;
+    transition: all 0.3s;
+}
+.vid-container ul li video:hover{
+    transform: scale(1.1);
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input{
-    width: 400px;
-    padding: 1.5rem 1rem;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    color: white;
-    font: normal 500 17px/20px var(--roboto);
+video{
+    width: 35%;
+    height: 35%;
+}
+/* End Video container (Discussion of study) */
+
+.peta2 img{
+    padding-top: 3rem;
+    height: auto;
+    width: 100%;
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
-    color: whitesmoke;
+/* Start Results and Action Plan Area */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+/*.gallery-container{
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 1.5pem;
 }
 
-.site-main .subscribe-us-area .subscribe form .btn-submit button{
-    background: whitesmoke;
-    color: #000;
-    padding: .7rem 2rem;
+.image-gallery{
+    display: grid;
+    grid-template-columns: lfr lfr lfr lfr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+        'img1 img2 img3 img4'
+        'img5  img6 img7 img8';
+} 
+
+.image-gallery a{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
 }
 
-/* End subscribe me */ 
+.image-gallery a i{
+    color: rgba(255, 255, 255, .6);
+    font-size: 3rem;
+    position: relative;
+    z-index: 100;
+    padding: 1rem 3rem;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: .4rem;
+    transition: opacity .5s;
+}
+
+.image-gallery a::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: (0,0,0,0.8);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+
+.img1{
+    grid-area: img1;
+    min-height: 51.5rem;
+    background-image: url("./img/peta1.jpg");
+}
+
+.img2{
+    grid-area: img2;
+    background-image: url("./img/peta2.jpg");
+}
+
+.img3{
+    grid-area: img3;
+    background-image: url("./img/rrl1-image.jpg");
+}
+
+.img4{
+    grid-area: img4;
+    background-image: url("./img/rrl2-image.jpg");
+}
+
+.img5{
+    grid-area: img5;
+    background-image: url("./img/rrl3-image.jpg");
+}
+
+.img6{
+    grid-area: img6;
+    background-image: url("./img/rrl4-image.jpg");
+}
+
+.img7{
+    grid-area: img7;
+    background-image: url("./img/banner/home-banner.png");
+}
+
+.img8{
+    grid-area: img8;
+    background-image: url("./img/banner/banner-image.jpg");
+}*/
+
+/* End Results and Action Plan Area */
+
+
+/* Start Appendix Area */
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius:  5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  }
+  
+  thead tr{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  td{
+    padding: 12px 15px;
+  }
+
+  tbody tr{
+    border-bottom: 1px solid #dddddd;
+  }
+
+  tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+  }
+
+  tbody tr:last-of-type{
+    border-bottom: 2px solid red;
+  }
+ 
+  .accordion{
+    padding-top: 2rem;
+    max-width: fit-content;
+  }
+
+  .accordion .contentBox{
+    position: relative;
+    margin: 10px 20px;
+
+  }
+
+  .accordion .contentBox .label{
+    position:  relative;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    cursor: pointer;    
+  }
+
+  .accordion .contentBox .label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em; 
+  }
+
+  .accordion .contentBox.active .label::before{
+    content: "- ";
+  }
+
+  .accordion .contentBox .content{
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;     
+  }
+
+  .accordion .contentBox.active .content{
+    height: 150px;
+    padding: 10px;
+
+  }
+/* End Appendix Area */
 
 /* Footer Area */ 
 
@@ -345,4 +599,4 @@ footer.footer-area .social a:hover > i{
 }
 
 
-/* End Footer */ 
+/* End Footer */
